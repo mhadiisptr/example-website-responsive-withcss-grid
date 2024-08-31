@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,6 +36,12 @@
 
     <!-- Start Nav -->
      <nav class="menu">
+      <div class="menu-toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+       </div>
       <div class="brand">
         <h1>Palembang Gallery</h1>
       </div> <!-- Judul Website-->
@@ -48,8 +55,55 @@
       </ul> <!-- Menu -->
      </nav>
 
+     <!-- Services -->
+      <section class="services">
+        <div class="service">
+          <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+          <h3>Belanja Mudah</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nisi dolor soluta veritatis ad facilis?</p>
+        </div>
 
+        <div class="service">
+          <div class="icon"><i class="fa fa-money"></i></div>
+          <h3>Pembayaran Mudah</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nisi dolor soluta veritatis ad facilis?</p>
+        </div>
+
+        <div class="service">
+          <div class="icon"><i class="fa fa-truck"></i></div>
+          <h3>Siap Kirim</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nisi dolor soluta veritatis ad facilis?</p>
+        </div>
+
+        <div class="service">
+          <div class="icon"><i class="fa fa-thumbs-up"></i></div>
+          <h3>Barang Original</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nisi dolor soluta veritatis ad facilis?</p>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+       <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="img/ampera.png" alt="ampera">
+        <img src="img/miecelor.png" alt="miecelor">
+        <img src="img/pempekkapalselam.png" alt="kapalselam">
+        <img src="img/penjahitsongket.png" alt="penjahitsongket">
+        <img src="img/perahu.png" alt="perahu">
+        <img src="img/perahubidar.png" alt="perahubidar">
+        <img src="img/pulaukemarao.png" alt="pulaukemarao">
+        <img src="img/rumahlimas.png" alt="rumahlimas">
+        <img src="img/taritanggai.png" alt="taritanggai">
+        <img src="img/tekwan.png" alt="tekwan">
+       </section>
   </div>
-  
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+  nav.classList.toggle('slide');
+});
+  </script>
 </body>
 </html>
